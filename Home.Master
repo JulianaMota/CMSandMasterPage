@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="CMSandMasterPage.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Home Page</title>
+        <link href="~/Styles/Style.css" rel="stylesheet" type="text/css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <section class="header">
+                <asp:Image ID="Logo" runat="server" />
+                <h1 runat="server" id="HeaderTitle">Title</h1>
+                <asp:Button ID="ButtonLogin" runat="server" Text="Login" OnClick="ButtonLogin_Click" />
+                <asp:Label ID="Labelmessage" CssClass="hide" runat="server" Text=""></asp:Label>
+            </section>
+            <div class="modal-back hide" id="divLogin" runat="server">
+                <div class="modal">
+                    <h2>Administration Login</h2>
+                    <asp:Label ID="LabelPass" runat="server" Text="Password"></asp:Label>
+                    <asp:TextBox ID="TextBoxPass" runat="server"></asp:TextBox>
+                    <asp:Button ID="ButtonSignin" runat="server" Text="Login" OnClick="ButtonSignin_Click" />
+                    <asp:Label ID="LabelLoginMess" runat="server" Text=""></asp:Label>
+                    <asp:Button ID="ButtonCancel" runat="server" Text="Cancel" OnClick="ButtonCancel_Click" />
+
+                </div>
+            </div>
+            <section class="mainItem">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderHeaderItem" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <section class="secundaryItems">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderSecundaryItems" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <section class="joke">
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolderJokes" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <footer>
+                <asp:Image ID="LogoFooter" runat="server" />
+                <div>
+                    <p runat="server" id="author">Author</p>
+                    <p runat="server" id="contact">contact</p>
+                    <a href="https://www.freepik.com/vectors/logo">Logo vector created by freepik - www.freepik.com</a>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CMS.master.cs" Inherits="CMSandMasterPage.CMS" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Style.css" rel="stylesheet" type="text/css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <section class="header">
+                <asp:Image ID="Logo" runat="server" />
+                <h1 runat="server" id="HeaderTitle">Title</h1>
+                <asp:Button ID="ButtonLogout" runat="server" Text="Logout" OnClick="ButtonLogout_Click" />
+                <asp:Label ID="Labelmessage" CssClass="hide" runat="server" Text=""></asp:Label>
+            </section>
+            <main>
+                <h2>Content Managment</h2>
+                <div class="menuBar">
+                    <asp:Menu ID="Navigationmenu" runat="server" CssClass="menu" EnableTheming="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Items.aspx" Text="Items" ></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Jokes.aspx" Text="Jokes"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Display.aspx" Text="Display"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/PicturesUpload.aspx" Text="Pictures Upload"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderCMS" runat="server">
+            </asp:ContentPlaceHolder>
+            </main>
+             <footer>
+                <asp:Image ID="LogoFooter" runat="server" />
+                <div>
+                    <p runat="server" id="author">Author</p>
+                    <p runat="server" id="contact">contact</p>
+                    <a href="https://www.freepik.com/vectors/logo">Logo vector created by freepik - www.freepik.com</a>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

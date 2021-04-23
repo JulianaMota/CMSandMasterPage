@@ -1,0 +1,279 @@
+﻿body {
+    font-family:Montserrat;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e6d1cf;
+    padding: 0 10%;
+}
+#Logo{
+    width: 70px;
+    height: fit-content;
+    align-self: center;
+}
+h1{
+    text-transform:uppercase;
+    font-size: 25px;
+    border: 2px dashed #000;
+    padding: 5px 20px;
+}
+input[type=submit], input[type=file] {
+    height: fit-content;
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #62757b;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    
+}
+input[type=submit]:hover{
+    background-color: #a5aaab; 
+}
+.mainItem {
+    margin: 40px 20%;
+}
+.mainItem img{
+    width: 500px;
+    margin: auto;
+    display: block;
+}
+.mainItem h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.secundaryItems {
+    padding: 40px 20%;
+    background-color: #e6d1cf;
+}
+.secundaryItems h2 {
+    text-align: center;
+    font-size: 20px;
+}
+.secundaryItems .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.secundaryItems .list div {
+    width: 39%;
+    margin: 10px 20px;
+    padding: 0 20px;
+    border: 2px dashed #000;
+}
+.secundaryItems div img{
+    height: 300px;
+    object-fit: cover;
+}
+.secundaryItems div h3{
+    text-align: center;
+}
+.secundaryItems div p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.joke {
+    margin: 40PX 20%;
+}
+
+.joke img{
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+.joke p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+p.caption {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+}
+footer {
+    background-color: #e6d1cf;
+    display: flex;
+    padding: 20px 10%;
+    justify-content: space-between;
+}
+footer p, footer a{
+    font-size: 12px;
+    margin: 2px;
+    color: #888;
+}
+
+footer img {
+    width: 50px;
+    height: fit-content;
+    align-self: center;
+}
+
+footer a {
+    color: #62757b;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.modal-back {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.modal{
+    position: absolute;
+    background-color: #fff;
+    width: 20%;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: grid;
+}
+.modal h2{
+    margin: 0 0 20px;
+    text-align: center;
+}
+.modal input[type=password]{
+    margin: 10px 0 20px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #62757b;
+}
+#ButtonCancel {
+    border: 2px solid #62757b;
+    background-color: transparent;
+    color: #62757b;
+    margin: 10px 0 0;
+}
+/*****************CMS PAGES***************************/
+main{
+    margin: 40px 10%;
+    min-height: 72vh;
+}
+main h2{
+ text-align: center;
+ font-size: 22px;
+ font-weight: 600;
+}
+.menuBar {
+    background-color: #62757b;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+.menu {
+    width: 100%;
+    outline: none;
+}
+    .menu ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 20px;
+        width: 100% !important;
+        box-sizing: border-box;
+        outline: none;
+    }
+.menu a{
+    text-decoration: none;
+    color: #e6d1cf;
+    outline:none;
+}
+
+.menu a:hover{
+    color: #fff;
+}
+
+table{
+    
+}
+th {
+    padding: 20px 10px;
+    background-color: #e6d1cf;
+    color: #62757b;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #d2a295;
+}
+th a {
+    text-decoration: none;
+    color: #62757b;
+}
+td {
+    border: 2px solid #d2a295;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #dedede;
+    text-align: center;
+    padding: 7px;
+}
+td img{
+   height: 180px;
+   object-fit:cover
+}
+td a{
+    display: grid;
+    background-color: #62757b;
+    color: #fff;
+    text-decoration: none;
+    text-align: center; 
+    padding: 5px 0;
+    border-radius: 10px;
+}
+td a:nth-child(2){
+    background-color: #c76d6d
+}
+#ContentPlaceHolderCMS_GridViewItems td:nth-child(5) {
+    text-align: left;
+}
+table input {
+    display: grid;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+
+}
+.displayTables{
+    display: flex;
+    justify-content: space-around;
+}
+.upload-container{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    row-gap: 20px;
+    box-sizing: border-box;
+}
+    .upload-container input {
+        width: 300px;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 10px;
+        border: 2px solid #62757b;
+    }
+input[type=file]{
+    box-sizing: border-box;
+}

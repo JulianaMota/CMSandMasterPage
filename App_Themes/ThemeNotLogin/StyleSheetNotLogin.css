@@ -1,0 +1,14 @@
+﻿body {
+}
+.mainItem{
+    height: 72vh;
+}
+.mainItem input{
+    margin: 20px 0;     
+}
+.secundaryItems {
+    display: none;
+}
+.joke {
+    display: none;
+}
